@@ -69,11 +69,7 @@ public class APIRequests extends TestScript {
     response=  RestAssured.get("https://restful-booker.herokuapp.com/booking");
     return response;
   }
-  public String ping() {
-
-    String response= get.get_method(this.base_uri(this.path(EndPoint.PING.getValue())));
-    return response;
-  }
+ 
 
 
 
