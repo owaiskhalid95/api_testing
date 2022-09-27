@@ -1,4 +1,4 @@
-package com.simpaisa.common.framework.utility;
+package com.pay.common.framework.utility;
 
 import io.restassured.response.Response;
 

@@ -1,4 +1,4 @@
-package com.simpaisa.common.framework.utility;
+package com.pay.common.framework.utility;
 
 import java.util.Collection;
 import java.util.Map;

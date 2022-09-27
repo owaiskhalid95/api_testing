@@ -1,11 +1,10 @@
-package com.simpaisa.common.framework.utility;
+package com.pay.common.framework.utility;
 
 public enum EndPoint {
 
 
   BOOKINGS("booking/"),
-  AUTH("auth/"),
-  PING("ping/");
+  AUTH("auth/");
 
 
 

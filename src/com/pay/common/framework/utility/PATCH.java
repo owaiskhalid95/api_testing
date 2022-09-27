@@ -1,19 +1,20 @@
-package com.simpaisa.common.framework.utility;
+package com.pay.common.framework.utility;
 
+import com.pay.common.framework.test.TestScript;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class DELETE     {
+public class PATCH extends TestScript {
 
-
-
-    public Response delete_bookings(String uri ,String token) {
+    public Response partial_update_bookings(String uri, String firstname, String lastname, String token) {
         RestAssured.baseURI = uri;
         RequestSpecification httpRequest = RestAssured.given();
         httpRequest.header("Content-Type", "application/json");
         httpRequest.header("Cookie", "token=" + token);
-        return httpRequest.delete();
+        httpRequest.body(partial_update_booking(firstname,lastname));
+        return httpRequest.patch();
 
     }
+
 }

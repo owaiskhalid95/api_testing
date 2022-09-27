@@ -1,10 +1,10 @@
-package com.simpaisa.workflows;
+package com.pay.workflows;
 
-import com.simpaisa.common.framework.test.TestScript;
-import com.simpaisa.common.framework.utility.APIRequests;
-import com.simpaisa.common.framework.utility.AssertTest;
+import com.pay.common.framework.test.TestScript;
+import com.pay.common.framework.utility.APIRequests;
+import com.pay.common.framework.utility.AssertTest;
 import org.testng.annotations.Test;
-import com.simpaisa.common.framework.utility.APIResponses;
+import com.pay.common.framework.utility.APIResponses;
 import io.restassured.response.Response;
 
 import java.text.SimpleDateFormat;
@@ -19,7 +19,7 @@ public class regression extends  TestScript{
     String id;
    @Test(priority = 1)
     public void booking() {
-        System.out.println(" STEP01: === Create Booking");
+        System.out.println(" STEP01: === Create new Booking");
         response = new APIResponses(request.create_booking("owais","khalid",currentDate,currentDate,"100"));
         AssertTest.assertValue(response.status_code(), "200", "FAIL: Unexpected response status", "PASS: Expected response status");
         AssertTest.assertValue(response.getValue("lastname"), "khalid", "FAIL: Unexpected response message", "PASS: Expected response message");
@@ -69,12 +69,6 @@ public class regression extends  TestScript{
         AssertTest.assertValue(response.status_code(), "200", "FAIL: Unexpected response status", "PASS: Expected response status");
         resetParams();
     }
-
-
-
-
-
-
 
 
     @Test(enabled = false)

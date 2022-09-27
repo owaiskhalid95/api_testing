@@ -1,9 +1,6 @@
-package com.simpaisa.common.framework.test;
+package com.pay.common.framework.test;
 
 import java.io.*;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.sql.ResultSet;
 import java.util.Properties;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;

@@ -1,6 +1,6 @@
-package com.simpaisa.common.framework.utility;
+package com.pay.common.framework.utility;
 
-import com.simpaisa.common.framework.test.TestScript;
+import com.pay.common.framework.test.TestScript;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;

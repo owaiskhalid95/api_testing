@@ -5,7 +5,7 @@
     <test name = "Test">
         <classes>
 
-            <class name="com.simpaisa.workflows.regression">
+            <class name="com.pay.workflows.regression">
             </class>
 
 

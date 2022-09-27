@@ -1,4 +1,4 @@
-package com.simpaisa.common.framework.test;
+package com.pay.common.framework.test;
 
 import java.util.Properties;
 
